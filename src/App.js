@@ -1,13 +1,11 @@
 import './App.css';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import { Home } from './Component/LandingPage/Home';
+import { BrowserRouter } from 'react-router-dom';
+import { Route } from './Component/Routes/Route';
 function App() {
   return (
-      <BrowserRouter>
-      <Routes>
-        <Route exact path="/" element={<Home/>}/>
-      </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Route />
+    </BrowserRouter>
   );
 }
 
